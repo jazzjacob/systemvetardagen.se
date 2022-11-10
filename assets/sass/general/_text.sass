@@ -1,3 +1,4 @@
+@use "./variables" as v
 h1,
 h2,
 h3   
@@ -40,17 +41,11 @@ li
   margin: 1rem 0  
  
 
-.text-yellow   
-  color: var(--clr-yellow)  
- 
+@each $colorname, $color in v.$colors
+    .text-#{$colorname} 
+      color: $color
 
-.text-blue   
-  color: var(--clr-darkblue)  
- 
 
-.text-white-dim   
-  color: #fff6  
- 
 
 .text-shadow   
   text-shadow: 0 0 8px #0003  

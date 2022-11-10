@@ -2,15 +2,15 @@
   <div class="wrapper">
     
 		<div id="home" class="hero">
-			<h1 class="text-yellow text-shadow">Systemvetardagen 2022</h1>
+			<h1 class="text-red text-shadow">Systemvetardagen 2022</h1>
 			<h3 class="hero-date text-shadow">9 februari</h3>
 			<p class="subtitle text-shadow">Sveriges största arbetsmarknadsdag för studenter och arbetsgivare inom
 				IT-branschen!</p>
 			<p>{{ $t('test') }}</p>
 			<div class="hero-buttons">
-				<a href="https://massan.systemvetardagen.se/sv/event/5695" class="button button-yellow">Till
+				<a href="https://massan.systemvetardagen.se/sv/event/5695" class="button--red" >Till
 					mässan</a>
-				<a href="#contact" class="button button-contact">Kontakta oss</a>
+				<a href="#contact" class="button">Kontakta oss</a>
 			</div>
 			<a href="#main" class="hero-chevron-down">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

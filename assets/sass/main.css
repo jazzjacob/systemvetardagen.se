@@ -1,28 +1,56 @@
+:root {
+  /* font-size: 16px   */
+  --clr-darkyellow: rgb(213, 140, 59);
+  --clr-yellow: rgb(234, 180, 64);
+  --clr-lightyellow: #ffcf99;
+  --clr-darkblue: #061d35;
+  --clr-blue: #044ed5;
+  --clr-white: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
 
-.button {
+.button, .button-darkblue, .btn-yellow, .button--green, .button--blue, .button--yellow, .button--red {
   background-color: transparent;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 2rem;
   padding: 0.8rem 1rem;
-  border: 0.25rem solid var(--clr-white);
-  color: var(--clr-white);
+  border: 0.25rem solid #00ff00;
+  color: #00ff00;
   transition: color 0.2s;
 }
-
-.button:hover {
+.button:hover, .button-darkblue:hover, .btn-yellow:hover, .button--green:hover, .button--blue:hover, .button--yellow:hover, .button--red:hover {
   color: var(--clr-yellow);
 }
 
-.button-yellow {
+.button--red {
+  border: 0.25rem solid #ff0000;
+  color: #ff0000;
+}
+
+.button--yellow {
+  border: 0.25rem solid #ffd000;
+  color: #ffd000;
+}
+
+.button--blue {
+  border: 0.25rem solid #00baff;
+  color: #00baff;
+}
+
+.button--green {
+  border: 0.25rem solid #00ff00;
+  color: #00ff00;
+}
+
+.btn-yellow {
   border: 0.25rem solid var(--clr-yellow);
   color: var(--clr-yellow);
 }
-
-.button-yellow:hover {
+.btn-yellow:hover {
   color: var(--clr-white);
 }
 
@@ -95,6 +123,16 @@ button {
   cursor: pointer;
 }
 
+:root {
+  /* font-size: 16px   */
+  --clr-darkyellow: rgb(213, 140, 59);
+  --clr-yellow: rgb(234, 180, 64);
+  --clr-lightyellow: #ffcf99;
+  --clr-darkblue: #061d35;
+  --clr-blue: #044ed5;
+  --clr-white: #ffffff;
+}
+
 h1,
 h2,
 h3 {
@@ -136,16 +174,20 @@ li {
   margin: 1rem 0;
 }
 
+.text-red {
+  color: #ff0000;
+}
+
 .text-yellow {
-  color: var(--clr-yellow);
+  color: #ffd000;
 }
 
 .text-blue {
-  color: var(--clr-darkblue);
+  color: #00baff;
 }
 
-.text-white-dim {
-  color: rgba(255, 255, 255, 0.4);
+.text-green {
+  color: #00ff00;
 }
 
 .text-shadow {
@@ -172,7 +214,7 @@ li {
   --clr-lightyellow: #ffcf99;
   --clr-darkblue: #061d35;
   --clr-blue: #044ed5;
-  --clr-white: #ffffff ;
+  --clr-white: #ffffff;
 }
 
 footer {

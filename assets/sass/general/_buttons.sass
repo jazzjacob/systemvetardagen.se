@@ -1,3 +1,6 @@
+@use "./variables" as v
+@use "sass:map"
+
 a   
   text-decoration: none  
  
@@ -8,25 +11,33 @@ a
   text-transform: uppercase  
   margin-top: 2rem  
   padding: 0.8rem 1rem  
-  border: 0.25rem solid var(--clr-white)  
-  color: var(--clr-white)  
+  border: 0.25rem solid map-get(v.$colors, "green")
+  color: map-get(v.$colors, "green")  
   transition: color 0.2s  
- 
+  
+  &:hover   
+    color: var(--clr-yellow)  
 
-.button:hover   
-  color: var(--clr-yellow)  
- 
+@each $colorname, $color in v.$colors
+    .button--#{$colorname} 
+      @extend .button 
+      border: 0.25rem solid $color
+      color: $color
+    
 
-.button-yellow   
+
+.btn-yellow   
+  @extend .button
   border: 0.25rem solid var(--clr-yellow)  
   color: var(--clr-yellow)  
+
+
+  &:hover   
+    color: var(--clr-white)  
  
 
-.button-yellow:hover   
-  color: var(--clr-white)  
- 
-
-.button-darkblue   
+.button-darkblue  
+  @extend .button 
   border: 0.25rem solid var(--clr-darkblue)  
   color: var(--clr-darkblue)  
  
