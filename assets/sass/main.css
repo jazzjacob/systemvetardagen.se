@@ -32,8 +32,8 @@ a {
 }
 
 .button--yellow {
-  border: 0.25rem solid #ffd000;
-  color: #ffd000;
+  border: 0.25rem solid var(--clr-yellow);
+  color: var(--clr-yellow);
 }
 
 .button--blue {
@@ -179,7 +179,7 @@ li {
 }
 
 .text-yellow {
-  color: #ffd000;
+  color: var(--clr-yellow);
 }
 
 .text-blue {

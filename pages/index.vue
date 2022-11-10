@@ -2,7 +2,7 @@
   <div class="wrapper">
     
 		<div id="home" class="hero">
-			<h1 class="text-red text-shadow">Systemvetardagen 2022</h1>
+			<h1 class="text-yellow text-shadow">Systemvetardagen 2022</h1>
 			<h3 class="hero-date text-shadow">9 februari</h3>
 			<p class="subtitle text-shadow">Sveriges största arbetsmarknadsdag för studenter och arbetsgivare inom
 				IT-branschen!</p>
