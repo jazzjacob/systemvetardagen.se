@@ -24,7 +24,11 @@ a
       border: 0.25rem solid $color
       color: $color
     
-
+@each $colorname, $color in v.$colors
+    .button-hover-#{$colorname}:hover 
+      //@extend .button 
+      border: 0.25rem solid $color
+      color: $color
 
 .btn-yellow   
   @extend .button

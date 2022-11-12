@@ -8,7 +8,7 @@
 				IT-branschen!</p>
 			<p>{{ $t('test') }}</p>
 			<div class="hero-buttons">
-				<a href="https://massan.systemvetardagen.se/sv/event/5695" class="button--red" >Till
+				<a href="https://massan.systemvetardagen.se/sv/event/5695" class="button--red button-hover-green" >Till
 					mässan</a>
 				<a href="#contact" class="button">Kontakta oss</a>
 			</div>
