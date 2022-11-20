@@ -11,6 +11,8 @@
 				<a href="https://massan.systemvetardagen.se/sv/event/5695" class="button--red button-hover-green" >Till
 					mässan</a>
 				<a href="#contact" class="button">Kontakta oss</a>
+				<Button btn-msg="{{$t('test')}}" btn-link="#main"/>
+				
 			</div>
 			<a href="#main" class="hero-chevron-down">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -196,7 +198,12 @@
 </template>
 
 <script>
+import Button from '@/components/Button.vue'
 export default {
   name: 'IndexPage'
+}
+
+components: {
+	Button
 }
 </script>
