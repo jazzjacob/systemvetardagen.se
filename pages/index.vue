@@ -11,7 +11,7 @@
 				<a href="https://massan.systemvetardagen.se/sv/event/5695" class="button--red button-hover-green" >Till
 					mässan</a>
 				<a href="#contact" class="button">Kontakta oss</a>
-				<Button btn-msg="{{$t('test')}}" btn-link="#main"/>
+				<Button btn-msg={{$t('test')}} btn-link="#main"/>
 				
 			</div>
 			<a href="#main" class="hero-chevron-down">

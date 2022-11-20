@@ -7,12 +7,12 @@
 <script>
 export default {
   props: {
-    btn-link: { 
+    btnlink: { 
       type: String,
       default: "",
       required: true
     },
-    btn-msg: { 
+    btnmsg: { 
       type: String,
       default: "Button",
       required: true
