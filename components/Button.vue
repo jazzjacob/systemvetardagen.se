@@ -1,6 +1,6 @@
 <template>
     <div class="btn-out">
-        <a href="" class="btn"> {{ btn-msg }} </a>
+        <a href="" class="btn"> {{ btnmsg }} </a>
     </div>
 </template>
 
