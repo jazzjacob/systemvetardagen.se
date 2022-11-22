@@ -1,25 +1,11 @@
 <template>
     <div class="btn-out">
-        <a href="" class="btn"> {{ btnmsg }} </a>
+        <a href="" class="btn"> {{ $t('test') }} </a>
     </div>
 </template>
 
 <script>
-export default {
-  props: {
-    btnlink: { 
-      type: String,
-      default: "",
-      required: true
-    },
-    btnmsg: { 
-      type: String,
-      default: "Button",
-      required: true
-    },
-  },
-  name: 'IndexPage'
-}
+
 </script>
 
 <style>
