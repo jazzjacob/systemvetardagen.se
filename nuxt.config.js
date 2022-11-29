@@ -2,6 +2,9 @@ import en from "./locales/en.json";
 import sv from "./locales/sv.json";
 
 export default {
+  server: {
+    host: '0' // default: localhost
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
@@ -25,7 +28,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/sass/main.css"],
+  css: ["@/assets/css/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],

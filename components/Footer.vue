@@ -4,7 +4,7 @@
 			<div class="footer-wrapper">
 				<div class="footer-content">
 					<div class="social-links">
-						<h2 class="text-yellow">Följ oss</h2>
+						<h2 style="color: var(--clr-white);">Följ oss</h2>
 						<a class="link-text" href="https://www.facebook.com/Systemvetardagen/">
 							<svg class="link-icon text-yellow" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 								fill="currentColor">
@@ -34,11 +34,11 @@
 						</a>
 					</div>
 					<div>
-						<h2 class="text-yellow">Adress</h2>
+						<h2 style="color: var(--clr-white);">Adress</h2>
 						<address>Studentkåren DISK<br>Borgarfjordsgatan 12<br>164 40 Kista</address>
 					</div>
 					<div>
-						<h2 class="text-yellow">Kontakt</h2>
+						<h2 style="color: var(--clr-white);">Kontakt</h2>
 						<a class="link-text" href="mailto:systemvetardagen@disk.su.se">
 							<svg class="link-icon text-yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 								fill="currentColor">
@@ -49,8 +49,65 @@
 						</a>
 					</div>
 				</div>
-				<p class="text-white-dim">© Systemvetardagen 2022</p>
+				<p class="text-white-dim">© Systemvetardagen 2023</p>
 			</div>
 		</footer>
   </div>
 </template>
+
+<style>
+	footer {
+		background-color: var(--clr-blue);
+	}
+
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		padding-bottom: 2rem;
+	}
+
+	.footer-content div {
+		margin-bottom: 2rem;
+	}
+
+	@media (min-width: 1024px) {
+		.footer-content {
+			flex-direction: row;
+		}
+
+		.footer-content div {
+			margin-right: 2rem;
+			min-width: 12rem;
+		}
+	}
+
+	.social-links {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.link-icon {
+		width: 1.5rem;
+		margin-right: 0.5rem;
+		color: var(--clr-white);
+	}
+
+	.link-text {
+		color: var(--clr-white);
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		margin-bottom: 1rem;
+		transition: color 0.2s;
+	}
+
+	.link-text:hover {
+		color: var(--clr-yellow);
+	}
+
+	address {
+		font-style: normal;
+	}
+
+</style>

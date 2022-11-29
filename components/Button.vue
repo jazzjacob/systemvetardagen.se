@@ -9,11 +9,22 @@ import { variableDeclaration } from '@babel/types';
 import { computed } from '@vue/reactivity';
 
     export default {
-        props: ['title', 'link', 'tColor', 'bColor', 'htColor', 'hbColor'],
+        props: {
+            title: String,
+            link: String,
+            tColor: String,
+            bColor: String,
+            hbColor: String,
+            htColor: String,
+           
+        },
         computed: {
             colorVar () {
-               
-                return 'background-color: var(' + this.bColor + '); color: var(' + this.tColor + ')'
+                if (this.bColor != "gradient") {
+                    return 'background: var(' + this.bColor + '); color: var(' + this.tColor + ')'
+                }
+
+                    
                     //'Background-color: var(' + this.htColor + ')',
                     //'Background-color: var(' + this.hbColor + ')', 
             },
@@ -29,7 +40,7 @@ import { computed } from '@vue/reactivity';
         methods: {
             mouseOver () {
                 this.hovering = !this.hovering
-                console.log(String(this.hovering))
+                //console.log(String(this.hovering))
                 
             }
         }
@@ -39,7 +50,7 @@ import { computed } from '@vue/reactivity';
 <style>
     .btn {
         /* background-color: var(--clr-blue); */
-        font-weight: 700;
+        font-weight: 500;
 
         /* color: var(--clr-white); */
         border: none;
@@ -47,10 +58,13 @@ import { computed } from '@vue/reactivity';
         text-align: center center;
         text-decoration: none;
         display: inline-block;
-        font-size: 25px;
+        font-size: 1.2rem;
         margin-top: 2rem;
         padding:0.6em 2em;
-        border-radius: 20px;
+        border-radius: 9px;
+
+        background: linear-gradient(90deg, var(--clr-blue), var(--clr-yellow));
+        color: var(--clr-white);
 
     }
     .btn-out {
