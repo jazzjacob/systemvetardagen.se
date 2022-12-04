@@ -62,9 +62,12 @@
 
 	.footer-content {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		max-width: 100%;
+		flex-shrink: 7;
 		padding-bottom: 2rem;
+		justify-content: space-evenly;
+		gap: 0.5rem
 	}
 
 	.footer-content div {
@@ -88,7 +91,7 @@
 	}
 
 	.link-icon {
-		width: 1.5rem;
+		width: 1rem;
 		margin-right: 0.5rem;
 		color: var(--clr-white);
 	}
@@ -98,7 +101,7 @@
 		font-weight: 500;
 		display: flex;
 		align-items: center;
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 		transition: color 0.2s;
 	}
 

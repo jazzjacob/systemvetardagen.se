@@ -3,8 +3,8 @@
 
         <!-- Hero Text -->
         <div>
-            <h3 class="hero-heading" >Find your next job</h3>
-            <p>Sveriges största arbetsmarknadsdag för studenter och arbetsgivare inom IT-branschen!</p>
+            <h1 class="hero-heading" >Find your next job</h1>
+            <h3>Sveriges största arbetsmarknadsdag för studenter och arbetsgivare inom IT-branschen!</h3>
         </div>
 
         <!-- Hero Buttons -->
