@@ -151,18 +151,23 @@ export default {
 	}
 
 	.sponsors-bg {
+		height: auto;
 		display: flex;
 		position: relative;
 	}
 
 	.blob-left {
 		left:0px;
-		top: 1000px;
+		top: 1300px;
+		max-width: 65%;
+		flex-shrink: 2;
 	}
 
 	.blob-right {
 		right: 0px;
 		top: 1000px;
+		max-width: 65%;
+		flex-shrink: 2;
 	}
 
 
