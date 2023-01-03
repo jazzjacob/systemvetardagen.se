@@ -61,6 +61,16 @@
 
 		</div>
 
+		<div class="sponsors-bg">
+			<svg class="blob-left" width="441" height="903" viewBox="0 0 441 903" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M-331.735 137.49C-253.651 49.7584 -89.8798 -23.1877 19.5266 8.54921C128.933 40.2861 183.965 177.288 267.774 306.214C351.573 435.721 464.913 557.736 435.205 669.472C406.262 781.793 235.045 883.838 60.5916 900.266C-114.645 917.274 -292.344 848.668 -367.467 756.455C-443.354 663.658 -416.676 547.836 -408.681 438.372C-399.913 328.91 -409.054 225.806 -331.735 137.49Z" fill="#FFF3F9"/>
+			</svg>
+
+			<svg class="blob-right" width="530" height="935" viewBox="0 0 530 935" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M11.9911 388.992C-11.635 260.983 1.43968 80.242 55.5509 23.0698C109.662 -34.1023 205.135 32.7624 305.578 71.6135C406.347 110.932 512.669 122.124 565.844 232.73C619.602 343.224 620.472 552.551 571.99 696.673C523.577 841.841 400.545 948.991 323.679 932.614C246.23 916.35 215.273 777.026 156.191 684.538C97.3668 591.469 36.1998 516.887 11.9911 388.992Z" fill="#F2F3FF"/>
+			</svg>
+
+		</div>
 
 		
 
@@ -88,6 +98,10 @@ export default {
 </script>
 
 <style>
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 	.hero-bg {
 		display: flex;
 		flex-direction: column;
@@ -136,6 +150,20 @@ export default {
 		top: 100px;
 	}
 
+	.sponsors-bg {
+		display: flex;
+		position: relative;
+	}
+
+	.blob-left {
+		left:0px;
+		top: 1000px;
+	}
+
+	.blob-right {
+		right: 0px;
+		top: 1000px;
+	}
 
 
 </style>
