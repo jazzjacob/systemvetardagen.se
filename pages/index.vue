@@ -1,6 +1,6 @@
 <template>
   	<div class="wrapper">
-		<div class="hero-bg">
+		<!-- <div class="hero-bg">
 			<svg class="h-blob-1" width="325" height="224" viewBox="0 0 325 224" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M1.40052 81.0294C-2.96125 41.1577 16.1882 -21.0558 49.4841 -47.103C82.7799 -73.1503 130.368 -62.9161 182.529 -62.6998C234.837 -62.3682 292.041 -72.1665 313.666 -41.8895C335.616 -11.7247 322.165 58.2881 286.154 112.746C250.11 167.545 175.925 219.117 135.119 223.425C93.9889 227.845 86.384 185.117 60.3347 161.662C34.4644 137.98 6.08736 120.789 1.40052 81.0294Z" fill="#F2F3FF"/>
 			</svg>
@@ -59,8 +59,14 @@
 
 
 
-		</div>
+		</div> -->
+		
 
+		<section>
+		<div class="sponsors">
+
+
+		
 		<div class="sponsors-bg">
 			<svg class="blob-left" width="441" height="903" viewBox="0 0 441 903" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M-331.735 137.49C-253.651 49.7584 -89.8798 -23.1877 19.5266 8.54921C128.933 40.2861 183.965 177.288 267.774 306.214C351.573 435.721 464.913 557.736 435.205 669.472C406.262 781.793 235.045 883.838 60.5916 900.266C-114.645 917.274 -292.344 848.668 -367.467 756.455C-443.354 663.658 -416.676 547.836 -408.681 438.372C-399.913 328.91 -409.054 225.806 -331.735 137.49Z" fill="#FFF3F9"/>
@@ -72,6 +78,13 @@
 
 		</div>
 
+		<div class="sponsors-content">
+			<h2>Sponsors</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque perferendis ea fugit expedita possimus nulla illum incidunt, nesciunt saepe error quod quibusdam atque dolorum repellendus quo. Beatae, illo ea. Ea.</p>
+		</div>
+		</div>
+		
+		</section>
 		
 
 	</div>
@@ -98,10 +111,7 @@ export default {
 </script>
 
 <style>
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-	}
+
 	.hero-bg {
 		display: flex;
 		flex-direction: column;
@@ -151,24 +161,43 @@ export default {
 	}
 
 	.sponsors-bg {
-		height: auto;
+		/* height: auto; */
 		display: flex;
-		position: relative;
+		/* position: relative; */
+		flex-grow: 0;
+		z-index: 0;
 	}
 
 	.blob-left {
 		left:0px;
-		top: 1300px;
+		top:  300px;
 		max-width: 65%;
 		flex-shrink: 2;
 	}
 
 	.blob-right {
 		right: 0px;
-		top: 1000px;
+		top: 000px;
 		max-width: 65%;
 		flex-shrink: 2;
 	}
+
+	.sponsors {
+		display: flex;
+		/* align-items: flex-end; */
+		/* justify-content: center; */
+		height: auto;
+		align-content: center;
+		
+
+	}
+
+	.sponsors-content {
+		flex-grow: 1;
+		z-index: 1;
+		position: relative;
+	}
+
 
 
 </style>

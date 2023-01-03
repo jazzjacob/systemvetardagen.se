@@ -27,6 +27,10 @@ export default {
     ]
   },
 
+  server: {
+    host: "0"
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/main.css"],
 
