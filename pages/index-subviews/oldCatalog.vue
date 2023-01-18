@@ -2,7 +2,7 @@
     <div id="oldCatalog" class="oldCatalog">
 
        <!-- <div class="catpic"> -->
-        <img class="catpicmedia" src="@/assets/img/chessboard.png" alt="Old Calalog Placeholder">
+        <img class="catpicmedia" src="@/assets/img/2022_Cat_Cover-img.png" alt="Old Calalog Placeholder">
        <!-- </div> -->
       
        <div class="oldcatcontent">
@@ -48,7 +48,7 @@
       
     }
     .catpicmedia {
-        width:90%; 
+        width:50%; 
         height: auto;
     }
 
