@@ -13,6 +13,7 @@
     "@nuxtjs/content": "^0.3.0",
     "@nuxtjs/i18n": "^7.2.0",
     "@vue/reactivity": "^3.2.45",
+    "axios": "^0.21.1",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",

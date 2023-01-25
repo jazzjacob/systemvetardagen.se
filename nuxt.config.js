@@ -24,6 +24,7 @@ export default {
     ],
     script: [
       { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+      { src: "https://unpkg.com/axios/dist/axios.min.js"},
     ]
   },
 
