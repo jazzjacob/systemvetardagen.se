@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div id="info">
+        <div class="info">
             <div class="info-first">
                 <h3 style=" color:var(--clr-pink-600); text-align: center;">{{ $t('before_the_fair') }}</h3>
                 <p><ul>
@@ -43,6 +43,11 @@
             </div>
         </div>
 
+        <Blob type="4-p" height="30rem" class="blob-l" />
+        <!-- <Blob type="10-p" height="35rem" class="blob-p" /> -->
+        <Blob type="8-p" height="35rem" class="blob-r" />
+
+
 	</section>
 
 
@@ -51,16 +56,40 @@
 
 <script>
     import Button from '@/components/Button.vue'
+    import Blob from "@/components/Blob.vue";
 
     export default {
         name: 'heroSection'
     }
     components: {
-        Button
+        Button, Blob
     }
 
 </script>
 <style>
+    .faq {
+        z-index: 100;
+    }
+
+    .blob-l {
+        left: 0;
+        top: 180rem;
+        transform: translateX(-40%);
+    }
+    .blob-p {
+        background-image: "@/assets/img/nod_11.jpg";
+        left: 10rem;
+        top: 170rem;
+
+    }
+    .blob-p >img {
+        background-image: "@/assets/img/nod_11.jpg";
+    }
+    .blob-r {
+        right: 0;
+        top: 165rem;
+        transform: translateX(50%);
+    }
     .info{
         display:flex;
         flex-direction: column;
@@ -74,6 +103,7 @@
         margin-bottom: 0rem;
         margin-top: 0rem;
         padding-bottom:2%;
+        z-index: 101;
     }
     .info-first{
         margin-left: 0rem;
