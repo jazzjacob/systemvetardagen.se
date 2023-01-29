@@ -6,7 +6,7 @@
     <sponsors />
     <soon />
     <info />
-    <faq />
+
     <oldCatalog />
     <!-- <Button title="See Map" link="map"/> -->
     <contact />
