@@ -86,9 +86,8 @@
         background-image: "@/assets/img/nod_11.jpg";
     }
     .blob-r {
-        right: 0;
-        top: 165rem;
-        transform: translateX(50%);
+       right:0;
+        transform: translateX(40%) translateY(50%);
     }
     .info{
         display:flex;
